@@ -26,7 +26,7 @@
             font-weight: bold;
         }
     </style>
-    
+
 </head>
 <body>
     <script language="javascript" type="text/javascript">
@@ -68,7 +68,7 @@
             var b = document.getElementById("mt2").value;
             var c = document.getElementById("mt3").value;
             var d = document.getElementById("sex").value;
-           
+
             alert("姓名:" + a + ",電話:" + b + ",生日:" + c + ",性別:" + d);
         }
 
@@ -82,73 +82,87 @@
             <option value="female"> female</option>
             <option value="male"> male</option>
         </select>
-           <table>
-               <tr>
-                   <th class="auto-style2">出生年月</th>
-                   <th class="auto-style2">身分證號</th>
-                   <th class="auto-style2">床號</th>
-               </tr>
-               <tr>
-                   <td><input id="mt3" type="text" name="出生年月" size="10" class="auto-style3"></td>
-                   <td><input type="text" name="身分證號" size="10" class="auto-style3"></td>
-                   <td><input type="text" name="床號" size="10" class="auto-style3"></td>
-               </tr>
-               <tr>
-                   <td>家庭經濟狀況</td>
-                   <td>醫療保險</td>
-                   <td>電話</td>
-               </tr>
-               <tr>
-                   <td>
-                       <select name="" class="auto-style3">
-                           <option value="正常收入"> 正常收入</option>
-                           <option value="低收入戶"> 低收入戶</option>
-                       </select>
-                   </td>
-                   <td>
-                       <select name="" class="auto-style3">
-                           <option value="健保給付"> 健保給付</option>
-                           <option value="無健保"> 無健保</option>
-                       </select>
-                   </td>
-                   <td><input id="mt2" type="text" name="電話" size="10" class="auto-style3"></td>
-                   <table>
+        <script>
 
-                       <th><span class="auto-style2">殘障部位:</span></span> <input type="checkbox" value="上肢" name="殘障部位" class="auto-style3"><span class="auto-style2">上肢</span> <input type="checkbox" value="下肢" name="殘障部位1" class="auto-style3"><span class="auto-style2">下肢</span> <input type="checkbox" value="脊椎" name="殘障部位3" class="auto-style3"><span class="auto-style2">脊椎
-                       <th><span class="auto-style2">是否需要輔助器具:</span></span><input type="radio" name="Fruit" value="PGT1" class="auto-style3"><span class="auto-style2">是</span><input type="radio" name="Fruit" value="PGT1" class="auto-style3"><span class="auto-style2">否
-                       <th class="auto-style2">手術時間
-                       <td><input type="text" name="年" size="10" class="auto-style3">年
-                       <td><input type="text" name="月" size="10" class="auto-style3">月
-                       <td><input type="text" name="日" size="10" class="auto-style3">日
-               </tr>
-               <th>
-                   <span class="auto-style2">手術名稱:</span></span><input type="radio" name="手術名稱" value="馬蹄足" class="auto-style3"><span class="auto-style2">
-                       馬蹄足
-                   </span><input type="radio" name="手術名稱" value="膝內翻" class="auto-style3"><span class="auto-style2">
-                       膝內翻
-                   </span><input type="radio" name="手術名稱" value="小兒麻痺後遺症" class="auto-style3"><span class="auto-style2">
-                       小兒麻痺後遺症
-                   </span><input type="radio" name="手術名稱" value="膝關節屈曲" class="auto-style3"><span class="auto-style2">
-                       膝關節屈曲
+                    function Button5_onclick() {
+                        var a = new Array("female", "male");
+                        var y = document.getElementById("sex");
+                        for (i = 0 ; i < a.length; i++) {
+                            var option = document.createElement("option");
+                            option.text = a[i];
+                            y.add(option);
+                        }
+                    }
+        </script>
+        <table>
+            <tr>
+                <th class="auto-style2">出生年月</th>
+                <th class="auto-style2">身分證號</th>
+                <th class="auto-style2">床號</th>
+            </tr>
+            <tr>
+                <td><input id="mt3" type="text" name="出生年月" size="10" class="auto-style3"></td>
+                <td><input type="text" name="身分證號" size="10" class="auto-style3"></td>
+                <td><input type="text" name="床號" size="10" class="auto-style3"></td>
+            </tr>
+            <tr>
+                <td>家庭經濟狀況</td>
+                <td>醫療保險</td>
+                <td>電話</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="" class="auto-style3">
+                        <option value="正常收入"> 正常收入</option>
+                        <option value="低收入戶"> 低收入戶</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" class="auto-style3">
+                        <option value="健保給付"> 健保給付</option>
+                        <option value="無健保"> 無健保</option>
+                    </select>
+                </td>
+                <td><input id="mt2" type="text" name="電話" size="10" class="auto-style3"></td>
+                <table>
 
-                       </tr>
+                    <th><span class="auto-style2">殘障部位:</span></span> <input type="checkbox" value="上肢" name="殘障部位" class="auto-style3"><span class="auto-style2">上肢</span> <input type="checkbox" value="下肢" name="殘障部位" class="auto-style3"><span class="auto-style2">下肢</span> <input type="checkbox" value="脊椎" name="殘障部位" class="auto-style3"><span class="auto-style2">脊椎
+                  
+
+                    <th><span class="auto-style2">是否需要輔助器具:</span></span><input type="radio" name="Fruit" value="PGT1" class="auto-style3"><span class="auto-style2">是</span><input type="radio" name="Fruit" value="PGT1" class="auto-style3"><span class="auto-style2">否
+                    <th class="auto-style2">手術時間
+                    <td><input type="text" name="年" size="10" class="auto-style3">年
+                    <td><input type="text" name="月" size="10" class="auto-style3">月
+                    <td><input type="text" name="日" size="10" class="auto-style3">日
+            </tr>
+            <th>
+                <span class="auto-style2">手術名稱:</span></span><input type="radio" name="手術名稱" value="馬蹄足" class="auto-style3"><span class="auto-style2">
+                    馬蹄足
+                </span><input type="radio" name="手術名稱" value="膝內翻" class="auto-style3"><span class="auto-style2">
+                    膝內翻
+                </span><input type="radio" name="手術名稱" value="小兒麻痺後遺症" class="auto-style3"><span class="auto-style2">
+                    小兒麻痺後遺症
+                </span><input type="radio" name="手術名稱" value="膝關節屈曲" class="auto-style3"><span class="auto-style2">
+                    膝關節屈曲
+
+                    </tr>
 
 
 
 
-               <td><strong>術後恢復情況</strong></td>
-               </td>
-               <tr>
-                   <th><span class="auto-style2">是否裝備輔助器具:</span></span><input type="radio" name="裝備輔助器具" value="是" class="auto-style3"><span class="auto-style2">是</span><input type="radio" name="裝備輔助器具" value="否" class="auto-style3"><span class="auto-style2">否
-                   <th><span class="auto-style2">是否堅持康復訓練:</span></span><input type="radio" name="堅持康復訓練" value="是" class="auto-style3"><span class="auto-style2">是</span><input type="radio" name="堅持康復訓練" value="否" class="auto-style3"><span class="auto-style2">否
+            <td><strong>術後恢復情況</strong></td>
+            </td>
+            <tr>
+                <th><span class="auto-style2">是否裝備輔助器具:</span></span><input type="radio" name="裝備輔助器具" value="是" class="auto-style3"><span class="auto-style2">是</span><input type="radio" name="裝備輔助器具" value="否" class="auto-style3"><span class="auto-style2">否
+                <th><span class="auto-style2">是否堅持康復訓練:</span></span><input type="radio" name="堅持康復訓練" value="是" class="auto-style3"><span class="auto-style2">是</span><input type="radio" name="堅持康復訓練" value="否" class="auto-style3"><span class="auto-style2">否
 
-               </tr>
-               <td>
-                   身高(cm):<input id="v01" type="text" name="身高(cm)" size="13"><br>
-                   體重(kg):<input id="v02" type="text" name="體重(kg)" size="13"><br>
-                   <button type="button" onclick="Button4_onclick()">BMI</button>
-               </td>
-               <script>
+            </tr>
+            <td>
+                身高(cm):<input id="v01" type="text" name="身高(cm)" size="13"><br>
+                體重(kg):<input id="v02" type="text" name="體重(kg)" size="13"><br>
+                <button type="button" onclick="Button4_onclick()">BMI</button>
+            </td>
+            <script>
 
                    function Button4_onclick() {
                        var h = document.getElementById("v01").value;
@@ -160,19 +174,69 @@
                        BMI = w / h2;
                        alert(BMI);
                    }
-               </script>
+            </script>
+            <script>
 
-               <th>
-                   填表人:<input type="text" name="填表人" size="10" class="auto-style3">&nbsp;&nbsp;&nbsp;審核人:<input type="text" name="審核人" size="10" class="auto-style3">
-                   </td>
-                   </span>
-                   </tr>
 
-           </table>
+
+        function showData() {
+            var z = document.getElementsByName("殘障部位");
+            var y = new Array();
+            var n = 0
+            for (i = 0; i < 2; i++) {
+                if (z[i].checked == true)
+                    y[n] = z[i].value;
+                       n++;
+
+
+            }
+            alert(y)
+
+                // alert(ret);
+                // ret defined in HTTP2019.js for keep the response value
+                //var myObj = JSON.parse(ret);
+              //  alert(myObj.length);
+
+         //  var obj = JSON.parse('{"上肢": "", "下肢": "", "脊椎": ""}');
+                var tableStr = "<tr><th>上肢</th> <th >下肢</th><th>脊椎</th></tr>"
+                for (i = 0; i < 2; i++) {
+                     // alert(myObj[i].name);
+                    var trStr = "<tr>";
+
+                    trStr = trStr + "<td>";
+                    trStr = trStr + y[i];
+                    trStr = trStr + "</td>";
+
+
+
+                    trStr = trStr + "</tr>";
+                    tableStr = tableStr + trStr;
+                }
+
+                // 表格字串字串在id為"t1"的"table"標簽内
+                document.getElementById("t1").innerHTML = tableStr;
+
+
+            }
+            </script>
+
+
+            <th>
+                填表人:<input type="text" name="填表人" size="10" class="auto-style3">&nbsp;&nbsp;&nbsp;審核人:<input type="text" name="審核人" size="10" class="auto-style3">
+                </td>
+                </span>
+                </tr>
+                <p>
+
+                    <input id="Button2" onclick="showData();" type="button" value="ShowData" />
+                    <table id="t1" />
+                </p>
+        </table>
         <button type="submit" value="sssss" style="height: 29px; width: 103px">送出</button>
         <button type="button" onclick="Button1_onclick()">檢查</button>
         <button type="button" onclick="Button2_onclick()">給值</button>
         <button type="button" onclick="Button3_onclick()">呈現</button>
+
 
     </form>
 </body>
